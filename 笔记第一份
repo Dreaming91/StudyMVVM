@@ -1,0 +1,14 @@
+在使用kotlin和databinding之前要进行配置（坑）·······
+app下的buildgradle：
+apply plugin: 'kotlin-kapt'
+android｛
+ dataBinding {
+            enabled true
+        }
+｝
+kapt {
+        generateStubs = true
+}
+dependence{
+   kapt "com.android.databinding:compiler:3.1.0"
+}
