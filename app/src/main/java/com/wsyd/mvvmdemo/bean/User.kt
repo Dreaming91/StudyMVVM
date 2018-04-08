@@ -1,8 +1,8 @@
-package com.wsyd.mvvmdemo
+package com.wsyd.mvvmdemo.bean
 
 import android.databinding.BaseObservable
 
-class UserBean : BaseObservable() {
+class User : BaseObservable() {
 
     private var name = "hy"
     private var age = "20"
@@ -21,5 +21,9 @@ class UserBean : BaseObservable() {
 
     fun getAge(): String {
         return this.age
+    }
+
+    fun action(): String {
+        return "new activity"
     }
 }
