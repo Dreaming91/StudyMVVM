@@ -12,3 +12,5 @@ kapt {
 dependence{
    kapt "com.android.databinding:compiler:3.1.0"
 }
+
+不知道为什么adapter的notifichang不好用（待解决）
